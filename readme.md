@@ -32,7 +32,7 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 ## Authors
 
-* **Joe Pasqua** - *Initial work* - [Joe Pasqua](https://github.com/jpasqua)
+* **[Joe Pasqua](https://github.com/jpasqua)** - *Initial work*
 
 ## License
 
