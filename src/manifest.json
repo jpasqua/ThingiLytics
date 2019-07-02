@@ -6,6 +6,7 @@
   "content_scripts": [
     {
       "matches": [
+        "https://www.thingiverse.com/*/analytics",
         "https://www.thingiverse.com/*/analytics/"
       ],
       "js": [
