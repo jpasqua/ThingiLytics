@@ -65,13 +65,15 @@ function doExport() {
     var tableOfThings = [];
     const fileTitle = 'thingilytics';
 
-    const thingList = document.getElementById("thing-stats");
+    const thingList = document.getElementById("analytics-thing-stats");
     const things = thingList.getElementsByTagName("li");
     for (let i = 0; i < things.length; i++) {
         let thisThing = things[i];
         let thingInfo = thisThing.getElementsByClassName("thing-info")[0];
         let thingInfoAnchor = thingInfo.getElementsByTagName("a")[0];
+        let thingName = thingInfoAnchor.textContent.trim().replace(',', '_');
 
+        if (thingName.includes("Deleted Thing")) continue;  // Skip deleted things
         let thingObj = {
             name: thingInfoAnchor.textContent.trim().replace(',', '_'),
             thingURL: thingInfoAnchor.href,
